@@ -1,0 +1,23 @@
+﻿<Window x:Name="lblSummary" x:Class="Romanojhoncedric.WeatherPanel.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Romanojhoncedric.WeatherPanel.Windows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="Summary1" Margin="0,-22,-2,0">
+        <Label x:Name="Summary" Content="Summary" HorizontalAlignment="Left" Margin="21,25,0,0" VerticalAlignment="Top" FontSize="36" Height="90" Width="250"/>
+        <Button x:Name="btnGetWeather" Content="Get Weather" HorizontalAlignment="Left" VerticalAlignment="Top" Width="408" Height="151" RenderTransformOrigin="0.489,0.531" Margin="164,214,0,0" FontSize="10" Click="BtnGetWeather_Click" FontWeight="Bold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.51"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.878"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>
